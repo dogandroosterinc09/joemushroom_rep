@@ -1,0 +1,17 @@
+.primary-heading {
+    margin-bottom: 45px;
+    h2 {
+         font-size: 3.6em;
+         span {
+         }
+    }
+}
+
+.secondary-heading {
+    h2 {
+        font-weight: 900;
+        font-size: 3.6em;
+        color: $color-secondary;
+        margin-bottom: 35px;
+    }
+}
