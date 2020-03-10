@@ -5,7 +5,7 @@
         <div class="main-nagivation-desktop__wrapper--row row">
             <div class="col-lg-2 main-nagivation-desktop__wrapper--logo">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('public/images/GNFlogo-wht.png') }}" alt="GNF logo">
+                    <img src="{{ asset('public/images/header/logo.jpg') }}" alt="GNF logo">
                 </a>
             </div>
             <div class="col-lg-8 main-nagivation-desktop__wrapper--menu">

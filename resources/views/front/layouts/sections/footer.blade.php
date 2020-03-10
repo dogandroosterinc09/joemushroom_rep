@@ -6,7 +6,7 @@
             <div class="padding--bottom2em">
                 <div class="dotted__wrapper">
                     <div class="col-md-12 text-center">
-                        <h6>{{section('Last Section.data.first.center_text')}}</h6>
+                        <h6>adasdasdasd</h6>
                     </div>                    
                 </div>
             </div> {{-- end of default-content--row --}}
@@ -18,16 +18,14 @@
             <div class="col-lg-6 footer__item">
                 <article>
                     <h4>
-                        <a href="{{url('our-research')}}">Our Research</a>
+                        <a href="">Our Research</a>
                     </h4>
                     <div class="row">
                         <div class="col-md-6">
                             <ul>
-                                <li><a href="{{url('our-research')}}">Departments</a>  
+                                <li><a href="">Departments</a>
                                     <ul>
-                                        @foreach(\App\Models\Research::get() as $research)
-                                            <li><a href="{{url('our-research/'.$research->slug)}}">{{$research->name}}</a></li>
-                                        @endforeach
+                                        <li><a href="">asdasdasd</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -69,10 +67,10 @@
                     <div class="footer__social">
                         <h4>Stay Connected</h4>
                         <ul>
-                            <li><a href="{{(\App\Models\SystemSetting::where('code','SS0008')->first()) ? \App\Models\SystemSetting::where('code','SS0008')->first()->value : ''}}"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="{{(\App\Models\SystemSetting::where('code','SS0009')->first()) ? \App\Models\SystemSetting::where('code','SS0009')->first()->value : ''}}"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="{{(\App\Models\SystemSetting::where('code','SS00010')->first()) ? \App\Models\SystemSetting::where('code','SS00010')->first()->value : ''}}"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="{{(\App\Models\SystemSetting::where('code','SS0011')->first()) ? \App\Models\SystemSetting::where('code','SS0011')->first()->value : ''}}"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </article>
