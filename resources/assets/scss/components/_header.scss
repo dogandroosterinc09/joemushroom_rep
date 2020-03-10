@@ -81,6 +81,15 @@ header {
                             a {
                                 color: #393e41;
                             }
+
+                            &:hover {       
+                                .dropdown-toggle {  
+                                    &:after {
+                                        border-top: 0.5px solid #393e41;
+                                        border-left: 0.5px solid #393e41;                                    
+                                    }                       
+                                }
+                            }
                         }
                     }
                     &.dropdown {
