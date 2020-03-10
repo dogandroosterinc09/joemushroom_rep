@@ -11,7 +11,62 @@
     h2 {
         font-weight: 900;
         font-size: 3.6em;
-        color: $color-secondary;
+        color: $color-third;
         margin-bottom: 35px;
+    }
+}
+
+h1 {
+    font-size: 58px;
+    line-height: 74px;
+    font-weight: 600;
+    @media (max-width: 1200px) {
+        font-size: 36px;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    color: $color-third;
+    font-weight: 600;
+    @media (max-width: 1200px) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 600;
+    // line-height: 74px;
+    @media (max-width: 1200px) {
+        font-size: 28px;
+    }
+}
+
+h4 {
+    font-size: 36px;
+    line-height: 30px;
+    @media (max-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
+h5 {
+    font-size: 27px;
+    line-height: 30px;
+    color: $color-third;    
+    @media (max-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+h6 {
+    font-size: 15px;
+    line-height: 21px;
+    color: $color-third;
+    text-transform: uppercase;
+    font-weight: 600;
+    @media (max-width: 1200px) {
+        
     }
 }

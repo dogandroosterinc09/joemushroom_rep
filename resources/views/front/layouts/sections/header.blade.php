@@ -15,126 +15,90 @@
                             <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
                         </li> --}}
                         <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="{{url('our-research')}}" {{--data-toggle="dropdown"--}}>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" {{--data-toggle="dropdown"--}}>
                                 Our Research
                             </a>
                             <div class="dropdown-menu mm-menu">
                                 <ul class="sub-menu mega-menu">
-                                    {{-- @foreach(\App\Models\Research::get() as $research)
-                                        <li>
-                                            <a class="nav-link" href="{{url('our-research/'.$research->slug)}}">
-                                                <div class="img-holder"><img src="{{ asset($research->file) }}" alt="Mega Menu Image" width="218" height="135"></div>
-                                                <span>{{$research->name}}</span>
-                                            </a>
-                                        </li>
-                                    @endforeach --}}
-
                                     <li>
-                                        <a class="nav-link" href="{{url('our-research')}}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-gallery.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Departments</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>1</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{ url('stories') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-stories.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Stories</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>2</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{ url('publications') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-pub.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Publications</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>3</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="{{url('technology')}}" {{--data-toggle="dropdown"--}}>
-                                Our Enabling Technology
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" {{--data-toggle="dropdown"--}}>
+                                Products
                             </a>
                             <div class="dropdown-menu mm-menu">
                                 <ul class="sub-menu mega-menu">
                                     <li>
-                                        <a class="nav-link" href="{{url('data-sciences')}}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-science.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Data Sciences / Bioinformatics</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>1</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{url('engineering')}}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-engg.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Engineering / Automation</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>2</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{url('genomics')}}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-genomics.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Genomic Technologies</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>3</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('gnf-systems') }}">GNF Systems</a>
+                            <a class="nav-link" href="javascript:void(0)">Products</a>
                         </li>
-                        {{-- <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="{{ url('gnf-systems') }}" >
-                                GNF Systems
-                            </a>
-                            <div class="dropdown-menu mm-menu">
-                                <ul class="sub-menu mega-menu">
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/uploads/research_image/gen-med-biology-dept-1576559340.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>About</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ url('products') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/uploads/research_image/trad-research-dept-1576559571.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Platforms</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="{{ url('products') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/uploads/research_image/discovery-chem-dept-1576559490.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Devices</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li> --}}
                         <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="{{ url('about-us') }}" {{--data-toggle="dropdown"--}}>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" {{--data-toggle="dropdown"--}}>
                                 About Us
                             </a>
                             <div class="dropdown-menu mm-menu">
                                 <ul class="sub-menu mega-menu">
                                     <li>
-                                        <a class="nav-link" href="{{ url('about-us') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img1.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>About GNF</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>1</span>
                                         </a>
                                     </li>
                                     {{-- <li>
                                         <a class="nav-link" href="{{ url('contact-us') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img3.jpg') }}" alt="Mega Menu Image"></div>
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
                                             <span>Contact Us</span>
                                         </a>
                                     </li> --}}
                                     <li>
-                                        <a class="nav-link" href="{{ url('leadership-team') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img2.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Leadership</span>
+                                        <a class="nav-link" href="javascript:void(0)">
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
+                                            <span>2</span>
                                         </a>
                                     </li>
                                     
                                     {{-- <li>
                                         <a class="nav-link" href="{{ url('gallery') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-gallery.jpg') }}" alt="Mega Menu Image"></div>
+                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
                                             <span>Gallery</span>
                                         </a>
                                     </li> --}}
@@ -143,7 +107,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('careers?country=US&division=NIBR&keyword=GNF') }}">Careers</a>
+                            <a class="nav-link" href="javascript:void(0)">Contact Us</a>
                         </li>                        
                     </ul>
                 </nav>
@@ -152,7 +116,7 @@
                 <div class="nav-secondary">
                     <ul>
                         <li><a href="#" class="btn--search"><i class="fas fa-search"></i></a></li>
-                        <li><a href="//www.novartis.com/" target="_blank"><img src="{{ asset('public/images/novartis-icon.png') }}" alt="Novartis"></a></li>
+                        <li><a href="//www.novartis.com/" target="_blank"><i class="fas fa-phone text-white"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -174,7 +138,7 @@
     {{-- FOR MOBILE MENU  --}}
     <nav class="mobile navbar navbar-expand-xl navbar-light" id="main_navbar">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('public/images/GNFlogo-wht.png') }}" alt="GNF logo">
+            <img src="{{ asset('public/images/header/logo.jpg') }}" alt="GNF logo">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -197,94 +161,56 @@
                         Our Research
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {{-- @foreach(\App\Models\Research::get() as $research)
-                            <li>
-                                <a class="dropdown-item" href="{{url('our-research/'.$research->slug)}}">{{$research->name}}</a>
-                            </li>
-                        @endforeach --}}
-
                         <li>
-                            <a class="dropdown-item" href="{{url('our-research')}}">Departments</a>
+                            <a class="dropdown-item" href="javascript:void(0)">1</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ url('stories') }}">Stories</a>
+                            <a class="dropdown-item" href="javascript:void(0)">2</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ url('publications') }}">Publications</a>
+                            <a class="dropdown-item" href="javascript:void(0)">3</a>
                         </li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{url('technology')}}" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Our Enabling Technology
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="{{url('data-sciences')}}">Data Sciences / Bioinformatics</a>
+                            <a class="dropdown-item" href="javascript:void(0)">1</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{url('engineering')}}">Engineering / Automation</a>
+                            <a class="dropdown-item" href="javascript:void(0)">2</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{url('genomics')}}">Genomic Technologies</a>
+                            <a class="dropdown-item" href="javascript:void(0)">3</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('gnf-systems') }}">GNF Systems</a>
+                    <a class="nav-link" href="javascript:void(0)">Products</a>
                 </li>
-                {{-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ url('gnf-systems') }}" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        GNF Systems
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="javascript:void(0)">About</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ url('products') }}">Platforms</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ url('products') }}">Devices</a>
-                        </li>
-                    </ul>
-                </li> --}}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ url('gnf-systems') }}" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         About Us
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="{{ url('about-us') }}">About GNF</a>
-                        </li>
-                        {{-- <li>
-                            <a class="dropdown-item" href="{{ url('contact-us') }}">Contact Us</a>
-                        </li> --}}
-                        <li>
-                            <a class="dropdown-item" href="{{ url('leadership-team') }}">Leadership</a>
-                        </li>
-                        {{-- <li>
-                            <a class="dropdown-item" href="{{ url('stories') }}">Our Stories</a>
+                            <a class="dropdown-item" href="javascript:void(0)">1</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ url('gallery') }}">Gallery</a>
-                        </li> --}}
+                            <a class="dropdown-item" href="javascript:void(0)">2</a>
+                        </li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('careers') }}">Careers</a>
+                    <a class="nav-link" href="javascript:void(0)">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a href="//www.novartis.com/" target="_blank"><img src="{{ asset('public/images/novartis-icon.png') }}" alt="Novartis"></a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li> -->
             </ul>
             <div class="search-wrap text-center">
                 <form  action="{{url('search')}}">

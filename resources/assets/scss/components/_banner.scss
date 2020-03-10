@@ -1,77 +1,89 @@
 $banner-background-color:#000;
+
 .banner {
     // height: 100vh !important;
     // margin-top: $header-height;
     height: 100vh;
-    // overflow: hidden;
+    overflow: visible;
+    // padding-left: 3%;
+    // padding-right: 3%;
     min-height: calc(100%);
     position: relative;
     background-color: $banner-background-color;
-    margin-bottom: 150px;
-
     &__slick {
         display: block;
         height: 100%;
         position: relative;
-        .slick-prev {
-            left: 0;
+        margin-bottom: 0 !important;
 
-            &:before {
-                content: "\f053";
-            }
+        button.slick-prev.slick-arrow {
+            background: #f00;
+            width: 20px;
+            height: 99px;
+            overflow: hidden;
+            text-indent: -999px;
+            position: absolute;
+            left: -11px;
+            z-index: 5;
+            top: 0 !important;
+            bottom: 0 !important;
+            margin: auto;
         }
-        .slick-next {
-            right: 0;
 
-            &:before {
-                content: "\f054";
-            }
+        button.slick-next.slick-arrow {
+            background: #f00;
+            width: 20px;
+            height: 99px;
+            overflow: hidden;
+            text-indent: -999px;
+            position: absolute;
+            right: -11px;
+            z-index: 5;
+            top: 0 !important;
+            bottom: 0 !important;
+            margin: auto;
         }
-        button.slick-arrow {
-            background: transparent;
-            color: $color-white;
-            z-index: 5;            
-            padding: 0 40px;
-            height: auto;
-            width: auto;
 
-            &:before {
-                font-size: 52px;
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-            }
-        }
-        // button.slick-next.slick-arrow {
-        //     background: transparent;
-        //     color: $color-white;
-        //     z-index: 5;            
-        // }
         div {
             width: 100%;
             height: 100%;
         }
     }
+
     .slick-dots {
         position: absolute;
+        top: 40%;
         bottom: 0;
-        width: 100%;
+        right: 14%;
+        left: initial;
+        width: 20px;
         text-align: center;
         padding: 0;
+        text-orientation: sideways;
+        // writing-mode: vertical-rl;
+        margin: 0;
+
         li {
             display: inline-block;
+            margin: 10px 0;
+
             button {
                 width: 20px;
                 height: 20px;
                 @include border-radius(100%);
-                border: 0;
                 overflow: hidden;
                 text-indent: -999px;
-                margin: 0 3px;
-                background: transparent;
-                border: 3px solid $color-white;
+                margin: 0;
+                background: rgba(255,255,255,0.5);
+                border: 3px solid transparent;
                 box-sizing: border-box;
                 padding: 0 !important;
+
+                &:before {
+                    opacity: 0;
+                }
             }
+
             &.slick-active {
                 button {
                     background: $color-white;
@@ -80,99 +92,106 @@ $banner-background-color:#000;
         }
     }
     &__item {
+        position: relative;
+
         &--middle {
             @include flex;
             @include flex-align-items(center);
             @include flex-justify-content(center);
         }
-        &--end {
-            @include flex;
-            @include flex-align-items(flex-end);
-            @include flex-justify-content(flex-end);
+
+        &:before {
+            content: '';
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
         }
     }
     &__content {
-        top: 0;
-        bottom: 0;
-        // max-width: 100%;
-        margin: auto;
-        position: inherit;
-        top: inherit;
-        bottom: inherit;
-        height: auto !important;
-        align-items: center;
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
+        z-index: 2;
+        position: relative;
 
-        h1 {
-            font-size: 4em;
-            font-weight: 800;
-            color: $color-white;
-            font-family: $font-secondary;
-            text-align: center;
-        }
-        p {
-            font-family: $font-primary;
-            font-size: 1.2em;
-            font-weight: 600;
-            color: $color-white;
-            text-align: center;
-            width: 80%;
-            margin: 0 auto;
-        }
+        &__text {
+            height: auto !important;
+            h1 {
+                color: $color-white;
+                font-size: 58px;
+                line-height: 74px;
 
-        &--search {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 80%;
-            margin: 0 auto 40px;
+                @media (max-width: 1200px) {
+                    font-size: 2.8em;
+                    line-height: 1.2;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2.5em;
+                    line-height: 1.2;
+                    width: 88%;
+                }
+                @media (max-width: 400px) {
+                    font-size: 2.3em;
+                    width: 85%;
+                }
+            }
+            p {
+                font-size: 21px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: $color-white;
+                margin-bottom: 0;
 
-            form {
-                select {
-                    height: 100%;
-                    width: calc(100% - 168px);
-                    padding: 0 16px;
-                    border-left: 1px solid #000;
-                    text-align: center;
-                    margin: 0;
+                @media (max-width: 1200px) {
+                    font-size: 18px;
+                    line-height: 1.2;
                 }
             }
         }
-        &--end {
-            top: initial;
-            bottom: 105px;
-            margin: 0 auto;
-            @include flex;
-            @include flex-align-items(flex-end);
-            @include flex-justify-content(flex-end);
+        &__cta {
+            height: auto !important;
+        }
+
+        &--description {
+            padding-left: 100px;
+            padding-top: 20px;
+
+            p {
+                font-size: 1.2em;
+                color: $color-white;
+            }
         }
     }
 
-    .scroll {
-        position: absolute;
-        bottom: -13px;
-        margin: auto;
-        @include flex;
-        @include flex-align-items(center);
-        @include flex-justify-content(center);
-        width: 100%;
+    .btn--scroll-down {
+        left: 50%;
+        right: 50%;
+        bottom: 55px;
+        margin: 0;
+        z-index: 1;
+        text-align: center;
+
+        &:hover {
+            text-decoration: none;
+        }
+        &:before {
+            content: '';
+            height: 150px;
+            width: 1px;
+            position: absolute;
+            background: #0080bb;
+            bottom: 65px;
+            z-index: 2;
+            overflow: visible;
+        }
     }
 
-    &:after {
-        content: '';
-        background: url('../images/banner-shadow.png'); 
-        background-repeat: no-repeat;
-        background-size: initial;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        bottom: -34px;
-        left: 0;
-        background-position: bottom;
-        z-index: -1;
-    }
 }
 
 .sub-banner {
@@ -184,20 +203,24 @@ $banner-background-color:#000;
     background-position: center !important;
     @include flex;
     @include flex-align-items(center);
+
     &__wrapper {
         position: relative;
         height: 100%;
         max-width: 1400px;
     }
+
     &__item {
         position: absolute;
         bottom: 0;
         width: 100%;
         left: 0;
     }
+
     &__content {
         width: 100%;
         max-width: 100%;
+
         h1 {
             border-top: 5px solid $color-secondary;
             display: inline-block;
@@ -206,9 +229,11 @@ $banner-background-color:#000;
             padding: 14px 25px;
             font-size: 2em;
             font-weight: $weight-extrabold;
+
             @media only screen and (max-width: $tablet) {
                 font-size: 1.5em;
             }
+
             @media only screen and (max-width:$mobile) {
                 font-size: 1em;
             }

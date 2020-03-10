@@ -32,10 +32,10 @@
                         </div>
                         <div class="col-md-6">
                             <ul>
-                                <li><a href="{{url('stories')}}">Stories</a></li>
-                                <li><a href="{{url('publications')}}">Publications</a></li>
-                                <li><a href="{{url('gallery')}}">Gallery</a></li>
-                                <li><a href="{{url('contact-us')}}">Contact Us</a></li>
+                                <li><a href="javascript:void(0)">Stories</a></li>
+                                <li><a href="javascript:void(0)">Publications</a></li>
+                                <li><a href="javascript:void(0)">Gallery</a></li>
+                                <li><a href="javascript:void(0)">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>                    
@@ -44,25 +44,25 @@
             <div class="col-lg-3 footer__item">
                 <article>
                     <h4>
-                        <a href="{{url('technology')}}">Our Enabling Technology</a>
+                        <a href="javascript:void(0)">Our Enabling Technology</a>
                     </h4>
                     <ul>
-                        <li><a href="{{url('data-sciences')}}">Data Sciences/Bioinformatics</a></li>
-                        <li><a href="{{url('engineering')}}">Engineering/Automation</a></li>
-                        <li><a href="{{ url('genomics') }}">Genomics</a></li>
-                        <li><a href="{{ url('gnf-systems') }}">GNF Systems</a></li>                        
+                        <li><a href="javascript:void(0)">Data Sciences/Bioinformatics</a></li>
+                        <li><a href="javascript:void(0)">Engineering/Automation</a></li>
+                        <li><a href="javascript:void(0)">Genomics</a></li>
+                        <li><a href="javascript:void(0)">Products</a></li>                        
                     </ul>
                 </article>
             </div>
             <div class="col-lg-3 footer__item">
                 <article>
                     <h4>
-                        <a href="{{url('about-us')}}">About Us</a>
+                        <a href="javascript:void(0)">About Us</a>
                     </h4>
                     <ul>
-                        <li><a href="{{url('about-us')}}">About GNF</a></li>
-                        <li><a href="{{url('leadership-team')}}">Leadership</a></li>
-                        <li><a href="{{url('careers')}}">Careers</a></li>
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="javascript:void(0)">Leadership</a></li>
+                        <li><a href="javascript:void(0)">Careers</a></li>
                     </ul>
                     <div class="footer__social">
                         <h4>Stay Connected</h4>
@@ -81,11 +81,11 @@
         <div class="container">
             <div class="footer__wrapper--row row">
                 <div class="col-lg-9 footer__item">
-                    © 2019 Novartis AG. Web Design by <a href="https://dogandrooster.com/" target="_blank">Dog and Rooster, Inc.</a>  |  <a href="{{url('terms-of-use')}}">Terms of Use</a>  |  <a href="{{url('privacy-policy')}}">Privacy policy</a>
+                    © 2020 Custom Template Web Design by <a href="https://dogandrooster.com/" target="_blank">Dog and Rooster, Inc.</a>  |  <a href="{{url('terms-of-use')}}">Terms of Use</a>  |  <a href="{{url('privacy-policy')}}">Privacy policy</a>
                 </div>
                 <div class="col-lg-2 footer__item footer__item__addlinfo text-center">
-                    <a href="//www.novartis.com/" target="_blank"><img src="{{ url('public/images/novartis-logo.png') }}"></a>
-                    <p><small>GNF is A Novartis Company</small></p>
+                    <a href="//www.novartis.com/" target="_blank"><img src="{{ url('public/images/header/logo.jpg') }}"></a>
+                    <p><small>Company</small></p>
                 </div>
             </div>
         </div>

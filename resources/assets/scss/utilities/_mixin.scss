@@ -81,19 +81,7 @@ $base__font-size :16px;
     justify-content: $a;
 }
 
-@mixin flex-justify-content($a:flex-end) {
-    -webkit-box-pack: $a;
-    -ms-flex-pack: $a;
-    justify-content: $a;
-}
-
 @mixin flex-align-items($a:center) {
-    -webkit-box-align: $a;
-    -ms-flex-align: $a;
-    align-items: $a;
-}
-
-@mixin flex-align-items($a:flex-end) {
     -webkit-box-align: $a;
     -ms-flex-align: $a;
     align-items: $a;
@@ -107,14 +95,6 @@ $base__font-size :16px;
 }
 
 @mixin transition($a:0.3s) {
-    -webkit-transition: all $a ease;
-    -moz-transition: all $a ease;
-    -ms-transition: all $a ease;
-    -o-transition: all $a ease;
-    transition: all $a ease;
-}
-
-@mixin transition($a:0.5s) {
     -webkit-transition: all $a ease;
     -moz-transition: all $a ease;
     -ms-transition: all $a ease;
