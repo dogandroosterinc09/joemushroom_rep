@@ -1,153 +1,51 @@
 // Control settings
-$header-height:147px;
+$header-height:100px;
 $header-scrolling-height:100px;
 $header-background:#f00;
 
 header {
-    // padding: 0;
-    // position: relative;
     position: absolute;
     width: 100%;
     z-index: 9;
     padding: 0;
     top: 0;
     left: 0;
-    height: 120px;
-    background: transparent;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center;
+    // overflow: hidden;
+    // position: fixed;
+    height: $header-height;
+    background: $header-background !important;
+    @include flex;
+    @include flex-align-items(center);
 
-    .navbar-brand {
-        background-color: $color-white;
-        box-shadow: 3.178px 6.237px 10px 0px rgba(0, 0, 0, 0.45);
-        z-index: 999;
-        position: relative;
-        padding: 5px 16px;
-        border-bottom-right-radius: 5px;
-    }
-
-    .navbar {
-        padding: 0rem;
-        margin-bottom: 2rem;
-        position: absolute;
+    &.scrolling {
+        position: fixed !important;
+        height: $header-scrolling-height;
+        top: 0;
+        left: 0;
         width: 100%;
-        z-index: 1;
-        // background-color: $color-navy;
+        z-index: 99;
+        -webkit-box-shadow: 1px 0 5px 1px rgba(0, 0, 0, .6);
+        box-shadow: 1px 0 5px 1px rgba(0, 0, 0, .6);
     }
 
-    .navbar-nav {
-        .nav-link {
-            position: relative;
-            padding: 0;
-            margin: 0;
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            padding: 18px 33px !important;
+    .main-nagivation-desktop {
+        .navbar-bar {
+            @include flex;
+            @include flex-align-items(center);
 
-            .fa-phone {
-                padding-left: 20px;
-
-                &:before {
-                    position: absolute;
-                    left: 15px;
-                    transform: rotate(90deg);
-                    -webkit-transform: rotate(90deg);
-                    -moz-transform: rotate(90deg);
-                    -o-transform: rotate(90deg);
-                    top: 22px;
-                    vertical-align: middle;
-                }
+            &__wrapper {
+                @include flex;
+                @include flex-justify-content(space-around);
+                width: 100%;
             }
 
-            &:hover {
-                background-color: $color-red2;     
-                @include transition(0.5s); 
-            }
-        } 
-        &--top {
-            background-color: $color-navy;
-
-            .nav-item {
-                border-right: 1px solid #4c7893;   
-                
-                 
-
-                &.register {
-                    background-color: $color-darkred;
-                    position: relative;
-
-                    .nav-link {
-                        padding-right: 72px !important;
-                        @include transition(0.5s);
-                        
-                        &:after {
-                            content: "\F061";
-                            font-family: "Font Awesome 5 Free";
-                            font-weight: 900;
-                            padding: 18px;
-                            background-color: $color-red2;
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            color: $color-white;
-                        }
-
-                        &:hover {
-                            &:after {
-                                @include transition(0.5s);                                                 
-                            }
-                        }
-                    }
-
-                }       
-            }
-        }
-        &--bottom{
-            background-color: rgba(11,71,108,0.102);
-            padding-left: 50px;
-            padding-right: 50px; 
-        }
-        .nav-link {
-            color: $color-white !important;
-
-            &.dropdown-toggle {
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    margin-left: 0;
-                    vertical-align: 0.255em;
-                    border: none;
-                    width: 7px;
-                    height: 7px;
-                    background: transparent;
-                    border-top: 0.5px solid $color-white;
-                    border-left: 0.5px solid $color-white;
-                    text-decoration: none;
-                    color: transparent;
-                    transform: rotate(-135deg);
-                    margin-left: 0.5em;
-                }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
             }
         }
     }
-
-    .dropdown .dropdown-menu {
-        border-radius:0;
-    }
-
-
-    /* Medium devices (tablets, 768px and up) 
-    The navbar toggle appears at this breakpoint */
-    @media (min-width: 768px) {  
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-        border-radius:0;
-     }
-    }
-
 }
 
 // .homepage--main {

@@ -1,64 +1,14 @@
-$footer-bottom-color:#3a6b88;
-$footer-text-muted:#adadad;
-
 .footer-main {
-    h4 {
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: $font-primary;
-    }
-    h5 {
-        ftont-size: 14px;
-        font-weight: bold;
-        font-family: $font-primary;
-    }
-    .footer-top {
-        background: url('../images/bg-footer-imgbg.png'); 
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: $color-white;
-        position: relative;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        &:before {
-            content: '';
-            // background: url('../images/right-blue-capitol-bg.png'); 
-            background-repeat: no-repeat;
-            background-position: right;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            height: 100%;
-            width: 100%;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-
-            li {
-                font-size: 16px;
-                line-height: 40px;
-                
-                a {
-                    text-decoration: none;
-                    color: #b9b9b9;
-                    font-size: 16px;
-                    line-height: 40px;
-                }
+        li {
+            a {
+                text-decoration: none;
             }
         }
-
-        p {
-            color: #b9b9b9;
-        }
-    }
-
-    .footer-bottom {
-        background-color: $footer-bottom-color;
-        text-align: center;
-        padding: 17px 0;
     }
 
     &__wrapper {
@@ -73,25 +23,7 @@ $footer-text-muted:#adadad;
 
     &__right {}
 
-    &__social {
-        ul {
-            li {
-                font-size: 0;
-                display: inline-block;
-            }
-        }
-    }
-
-    &__copyright {
-        p {
-            color: $footer-text-muted;    
-            margin: 0;        
-        }
-        a {
-            color: $footer-text-muted;
-            text-decoration: none;
-        }
-    }
+    &__copyright {}
 }
 
 /* Scroll to top link */
