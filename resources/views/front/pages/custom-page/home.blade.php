@@ -35,12 +35,10 @@
                                             {{-- slick  --}}
                                             <div class="global-featured-slider__top--slick">
 
-                                  {{--              <div class="global-featured-slider__item">
+                                           <div class="global-featured-slider__item">
                                                     <a href="#">
                                                         <div class="global-featured-slider__item--image image-background">
-                                                            <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                            asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                            asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                            <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                         </div>
                                                     </a>
                                                     <div class="global-featured-slider__description">
@@ -51,9 +49,7 @@
                                                 <div class="global-featured-slider__item">
                                                     <a href="#">
                                                         <div class="global-featured-slider__item--image image-background">
-                                                            <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                            asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                            asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                            <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                         </div>
                                                     </a>
                                                     <div class="global-featured-slider__description">
@@ -64,9 +60,7 @@
                                                 <div class="global-featured-slider__item">
                                                     <a href="#">
                                                         <div class="global-featured-slider__item--image image-background">
-                                                            <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                            asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                            asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                            <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                         </div>
                                                     </a>
                                                     <div class="global-featured-slider__description">
@@ -77,9 +71,7 @@
                                                 <div class="global-featured-slider__item">
                                                     <a href="#">
                                                         <div class="global-featured-slider__item--image image-background">
-                                                            <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                            asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                            asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                            <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                         </div>
                                                     </a>
                                                     <div class="global-featured-slider__description">
@@ -101,34 +93,26 @@
                                         {{-- slick  --}}
                                         <div class="global-featured-slider__bottom--slick">
 
-                                          {{--  <div class="global-featured-slider__item">
+                                           <div class="global-featured-slider__item">
                                                 <div class="global-featured-slider__item--image image-background">
-                                                    <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                        asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                        asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                    <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                 </div>
                                             </div>
                                             <div class="global-featured-slider__item">
                                                 <div class="global-featured-slider__item--image image-background">
-                                                    <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                        asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                        asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                    <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                 </div>
                                             </div>
                                             <div class="global-featured-slider__item">
                                                 <div class="global-featured-slider__item--image image-background">
-                                                    <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                        asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                        asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                    <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                 </div>
                                             </div>
                                             <div class="global-featured-slider__item">
                                                 <div class="global-featured-slider__item--image image-background">
-                                                    <img src="{!! !empty($item) && !empty($item->page_sections()->where('section', 'banner_image')->first()) ?
-                                                                        asset($item->page_sections()->where('section', 'banner_image')->first()->content) :
-                                                                        asset('public/images/dogandrooster_full_bg.jpg') !!}">
+                                                    <img src="{!! asset('public/images/dogandrooster_full_bg.jpg') !!}">
                                                 </div>
-                                            </div>--}}
+                                            </div>
 
 
                                             {{-- end of featured-slider-main__item --}}
