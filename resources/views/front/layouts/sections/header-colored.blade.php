@@ -1,11 +1,11 @@
-<header>
+<header class="colored">
 
     {{-- FOR DESKTOP MENU  --}}
-    <div class="main-nagivation-desktop container">
+    <div class="main-nagivation-desktop main-nagivation-desktop--colored container">
         <div class="main-nagivation-desktop__wrapper--row row">
             <div class="col-lg-2 main-nagivation-desktop__wrapper--logo">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('public/images/GNFlogo-wht.png') }}" alt="GNF logo">
+                    <img src="{{ asset('public/images/gnf-colored.png') }}" alt="GNF logo">
                 </a>
             </div>
             <div class="col-lg-8 main-nagivation-desktop__wrapper--menu">
@@ -81,7 +81,7 @@
                             <a class="nav-link" href="{{ url('gnf-systems') }}">GNF Systems</a>
                         </li>
                         {{-- <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="{{ url('gnf-systems') }}" >
+                            <a class="nav-link dropdown-toggle" href="{{ url('gnf-systems') }}">
                                 GNF Systems
                             </a>
                             <div class="dropdown-menu mm-menu">
@@ -143,7 +143,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('careers?country=US&division=NIBR&keyword=GNF') }}">Careers</a>
+                            <a class="nav-link" href="{{ url('careers') }}">Careers</a>
                         </li>                        
                     </ul>
                 </nav>
@@ -152,7 +152,7 @@
                 <div class="nav-secondary">
                     <ul>
                         <li><a href="#" class="btn--search"><i class="fas fa-search"></i></a></li>
-                        <li><a href="//www.novartis.com/" target="_blank"><img src="{{ asset('public/images/novartis-icon.png') }}" alt="Novartis"></a></li>
+                        <li><a href="//www.novartis.com/" target="_blank"><img src="{{ asset('public/images/novartis-logo-colored.png') }}" alt="Novartis"></a></li>
                     </ul>
                 </div>
             </div>
@@ -169,7 +169,6 @@
             <span class="close">X</span>
         </form>
     </div>
-
 
     {{-- FOR MOBILE MENU  --}}
     <nav class="mobile navbar navbar-expand-xl navbar-light" id="main_navbar">
@@ -235,6 +234,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('gnf-systems') }}">GNF Systems</a>
                 </li>
+                
                 {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="{{ url('gnf-systems') }}" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -296,7 +296,6 @@
             </div>
         </div>
     </nav>
-
 
 </header>
 
