@@ -13,14 +13,12 @@
 @import '~slick-carousel/slick/slick-theme';
 @import "~select2/dist/css/select2";
 @import "~cookieconsent/build/cookieconsent.min.css";
-
 // variables
 @import "utilities/mixin";
 @import "utilities/variables";
 @import "utilities/colors";
 @import "utilities/typography";
 @import "utilities/global-resets";
-
 // Custom components
 @import "components/button";
 @import "components/header";
@@ -36,12 +34,12 @@
 @import "components/main-page";
 @import "components/subpages";
 @import "components/sliders";
+@import "components/modal";
 @import "browsers/safari-only";
 @import "browsers/firefox-only";
 @import "browsers/ie-only";
-
-
+@import "components/checkbox";
 // Pages
-@import "pages/homepage";
-@import "pages/about";
-@import "pages/contact-us";
+@import "pages/home";
+@import "pages/page-section";
+// @import "pages/contact-us";

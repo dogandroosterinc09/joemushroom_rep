@@ -37,12 +37,19 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" class="themes" href="{{ asset('public/css/admin.css') }}">
 
+  
+
+
     @if($admin_template['theme'])
         <link id="theme-link" rel="stylesheet" href="{{ asset('public/css/themes/'.$admin_template['theme'].'.css') }}">
     @endif
 
     @stack('extrastylesheets')
     <script src="{{asset('public/js/modernizr.min.js')}}"></script>
+
+      
+    {{-- for admin control overwrite --}}
+    <link rel="stylesheet" class="themes" href="{{ asset('public/css/admin-control.css') }}"> 
 </head>
 <body>
 {{--Page Wrapper--}}
