@@ -48345,8 +48345,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\wamp64\www\laravel_template_2020\resources\assets\js\app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! C:\wamp64\www\laravel_template_2020\resources\assets\scss\app.scss */"./resources/assets/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\laravel_template_2020\resources\assets\js\app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\laravel_template_2020\resources\assets\scss\app.scss */"./resources/assets/scss/app.scss");
 
 
 /***/ })
