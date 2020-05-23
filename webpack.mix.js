@@ -18,6 +18,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .copy('node_modules/slick-carousel/slick/ajax-loader.gif', 'public/fonts')
     .copy('node_modules/slick-carousel/slick/fonts', 'public/fonts')
     .sass('resources/assets/scss/app.scss', 'public/css')
+    .sass('resources/assets/scss/admin-control.scss', 'public/css')
     .styles([
         'public/css/app.css',
         'resources/assets/css/sweetalert.css'
