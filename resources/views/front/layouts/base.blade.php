@@ -25,16 +25,22 @@
     <link rel="canonical" href="{!! $seo_meta['canonical'] !!}">
 
     {{--Icons--}}
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('public/images/icons/apple-touch-icon.png') }}">
+    {{--<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('public/images/icons/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('public/images/icons/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/images/icons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('public/images/icons/site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ asset('public/images/icons/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <link rel="mask-icon" href="{{ asset('public/images/icons/safari-pinned-tab.svg') }}" color="#5bbad5">--}}
+    <link rel="shortcut icon" href="{{ asset('public/images/favicon/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('public/images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('public/images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('public/images/favicon/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('public/images/favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
 
     @stack('extrastylesheets')
