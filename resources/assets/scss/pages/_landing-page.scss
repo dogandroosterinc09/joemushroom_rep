@@ -74,7 +74,7 @@ section.homepage.homepage--main.image-background {
                 content: '';
                 display: inline-block;
                 vertical-align: middle;
-                width: 172px;
+                width: 25%;
                 height: 3px;
                 background: #ffffff;
                 position: relative;
@@ -84,7 +84,7 @@ section.homepage.homepage--main.image-background {
                 content: '';
                 display: inline-block;
                 vertical-align: middle;
-                width: 172px;
+                width: 25%;
                 height: 3px;
                 background: #ffffff;
                 position: relative;
@@ -93,16 +93,19 @@ section.homepage.homepage--main.image-background {
         }
         h2 {
             color: #ffffff;
-            font-size: 146px;
+            //font-size: 146px;
+            font-size: 7.56vw;
             font-weight: normal;
             font-family: $font-fourth;
             letter-spacing: 2px;
-            line-height: 0.7em;
+            line-height: 1em;
             text-shadow: 0 0 16px rgba(0,0,0,0.57);
             span {
                 display: block;
-                font-size: 88px;
+                //font-size: 88px;
+                font-size: 4.6vw;
                 letter-spacing: 5px;
+                line-height: 1em;
             }
         }
     }

@@ -1,0 +1,96 @@
+/* 1699px  */
+@media only screen and (max-width: 1699px) {
+
+}
+
+/* 1599px  */
+@media only screen and (max-width: 1599px) {
+
+}
+
+/* 1499px  */
+@media only screen and (max-width: 1499px) {
+
+}
+
+/* 1399px  */
+@media only screen and (max-width: 1399px) {
+
+    section.homepage.homepage--main.image-background .center-title {
+        left: 70px !important;
+    }
+
+}
+
+/* 1299px  */
+@media only screen and (max-width: 1299px) {
+
+}
+
+/* 1199px  */
+@media only screen and (max-width: 1199px) {
+
+}
+
+/* 1099px  */
+@media only screen and (max-width: 1099px) {
+
+}
+
+/* 991px  */
+@media only screen and (max-width: 991px) {
+    section.homepage.homepage--main.image-background .top-header .left {
+        float: none !important;
+        padding-left: 0 !important;
+        text-align: center;
+    }
+    section.homepage.homepage--main.image-background .top-header .right {
+        margin: 30px auto !important;
+        text-align: center;
+        float: none !important;
+    }
+    section.homepage.homepage--main.image-background .top-header .right a {
+        display: block !important;
+        max-width: 400px !important;
+        margin: 15px auto !important;
+    }
+    section.homepage.homepage--main.image-background .center-title {
+        width: 100%;
+        top: unset !important;
+        left: 0 !important;
+        right: 0;
+        bottom: 85px !important;
+        margin: auto !important;
+        h2 {
+            font-size: 90px !important;
+            span {
+                font-size: 50px !important;
+            }
+        }
+    }
+}
+
+/* 767px  */
+@media only screen and (max-width: 767px) {
+
+    section.homepage.homepage--main.image-background .center-title h1::before,
+    section.homepage.homepage--main.image-background .center-title h1::after {
+        display: none !important;
+    }
+}
+
+/* 640px  */
+@media only screen and (max-width: 640px) {
+
+    section.homepage.homepage--main.image-background .center-title h2 {
+        font-size: 70px !important;
+    }
+    section.homepage.homepage--main.image-background .center-title h2 span {
+        letter-spacing: 0 !important;
+    }
+}
+
+
+
+
+
