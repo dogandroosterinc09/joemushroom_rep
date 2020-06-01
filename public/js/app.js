@@ -48327,6 +48327,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof
 
 /***/ }),
 
+/***/ "./resources/assets/scss/admin-control.scss":
+/*!**************************************************!*\
+  !*** ./resources/assets/scss/admin-control.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/assets/scss/app.scss":
 /*!****************************************!*\
   !*** ./resources/assets/scss/app.scss ***!
@@ -48339,14 +48350,15 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************!*\
-  !*** multi ./resources/assets/js/app.js ./resources/assets/scss/app.scss ***!
-  \***************************************************************************/
+/*!**********************************************************************************************************************!*\
+  !*** multi ./resources/assets/js/app.js ./resources/assets/scss/app.scss ./resources/assets/scss/admin-control.scss ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\laravel_template_2020\resources\assets\js\app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\laravel_template_2020\resources\assets\scss\app.scss */"./resources/assets/scss/app.scss");
+__webpack_require__(/*! C:\wamp64\www\joemushroom_rep\resources\assets\js\app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! C:\wamp64\www\joemushroom_rep\resources\assets\scss\app.scss */"./resources/assets/scss/app.scss");
+module.exports = __webpack_require__(/*! C:\wamp64\www\joemushroom_rep\resources\assets\scss\admin-control.scss */"./resources/assets/scss/admin-control.scss");
 
 
 /***/ })
