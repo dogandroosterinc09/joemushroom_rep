@@ -68,6 +68,7 @@ section.homepage.homepage--main.image-background {
             position: relative;
             font-size: 33px;
             font-weight: 900;
+            margin-bottom: 0;
             font-family: $font-primary;
             text-transform: uppercase;
             &::before {
@@ -98,14 +99,14 @@ section.homepage.homepage--main.image-background {
             font-weight: normal;
             font-family: $font-fourth;
             letter-spacing: 2px;
-            line-height: 1em;
+            line-height: 0.85em;
             text-shadow: 0 0 16px rgba(0,0,0,0.57);
             span {
                 display: block;
                 //font-size: 88px;
                 font-size: 4.6vw;
                 letter-spacing: 5px;
-                line-height: 1em;
+                line-height: 0.75em;
             }
         }
     }
