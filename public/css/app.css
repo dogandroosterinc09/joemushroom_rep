@@ -21918,6 +21918,11 @@ _::-webkit-:not(:root:root),
 /* 1299px  */
 /* 1199px  */
 /* 1099px  */
+@media only screen and (max-width: 1099px) {
+  section.homepage.homepage--main.image-background .center-title {
+    min-width: 680px;
+  }
+}
 /* 991px  */
 @media only screen and (max-width: 991px) {
   section.homepage.homepage--main.image-background .top-header .left {
@@ -21959,15 +21964,19 @@ _::-webkit-:not(:root:root),
 section.homepage.homepage--main.image-background .center-title h1::after {
     display: none !important;
   }
-}
-/* 640px  */
-@media only screen and (max-width: 640px) {
+
   section.homepage.homepage--main.image-background .center-title h2 {
     font-size: 60px !important;
   }
-
+}
+/* 640px  */
+@media only screen and (max-width: 640px) {
   section.homepage.homepage--main.image-background .center-title h2 span {
     letter-spacing: 0 !important;
+  }
+
+  section.homepage.homepage--main.image-background .center-title {
+    min-width: 100%;
   }
 }
 section.homepage {
