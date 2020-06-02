@@ -2,6 +2,7 @@ section.homepage.homepage--main.image-background {
     position: fixed !important;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     .top-header {
         position: relative;
         display: block;
@@ -68,7 +69,6 @@ section.homepage.homepage--main.image-background {
             position: relative;
             font-size: 33px;
             font-weight: 900;
-            margin-bottom: 0;
             font-family: $font-primary;
             text-transform: uppercase;
             &::before {

@@ -41,6 +41,11 @@
 
 /* 991px  */
 @media only screen and (max-width: 991px) {
+    section.homepage.homepage--main.image-background#coming-soon {
+        position: relative !important;
+        height: 100%;
+        min-height: 830px;
+    }
     section.homepage.homepage--main.image-background .top-header .left {
         float: none !important;
         padding-left: 0 !important;
@@ -61,7 +66,7 @@
         top: unset !important;
         left: 0 !important;
         right: 0;
-        bottom: -10px !important;
+        bottom: 50px !important;
         margin: auto !important;
         h2 {
             font-size: 90px !important;

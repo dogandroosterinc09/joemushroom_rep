@@ -1,4 +1,4 @@
-<section class="homepage homepage--main image-background">
+<section id="coming-soon" class="homepage homepage--main image-background">
     <img src="{{ asset('public/images/coming-soon-banner-new.jpg') }}" alt="Banner Image">
     <div class="top-header">
         <div class="left">
