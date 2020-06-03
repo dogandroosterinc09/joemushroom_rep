@@ -21743,6 +21743,14 @@ section {
 }
 
 /* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    section.homepage.homepage--main.image-background .center-title h2,
+section.homepage.homepage--main.image-background .center-title h2 span {
+      line-height: 0 !important;
+    }
+  }
+}
 /* Safari 9.0-10.0 (not 10.1) */
 _::-webkit-:not(:root:root),
 .sub-banner__wrapper {
