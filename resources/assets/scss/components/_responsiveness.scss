@@ -39,6 +39,16 @@
     }
 }
 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+    section.homepage.homepage--main.image-background#coming-soon {
+        min-height: 1030px !important;
+    }
+}
+
 /* 991px  */
 @media only screen and (max-width: 991px) {
     section.homepage.homepage--main.image-background#coming-soon {
@@ -47,26 +57,35 @@
         min-height: 830px;
     }
     section.homepage.homepage--main.image-background .top-header .left {
-        float: none !important;
-        padding-left: 0 !important;
-        text-align: center;
+        padding-left: 15px !important;
+        img {
+            max-width: 180px !important;
+        }
     }
     section.homepage.homepage--main.image-background .top-header .right {
-        margin: 25px auto !important;
+        /*margin: 25px auto !important;
         text-align: center;
-        float: none !important;
+        float: none;*/
+        margin-right: 15px !important;
+        .desktop {
+            display: none !important;
+        }
+        .mobile {
+            display: block !important;
+        }
     }
     section.homepage.homepage--main.image-background .top-header .right a {
+        margin-right: 0 !important;
+    }
+    /*section.homepage.homepage--main.image-background .top-header .right a {
         display: block !important;
         max-width: 400px !important;
         margin: 8px auto !important;
-    }
+    }*/
     section.homepage.homepage--main.image-background .center-title {
         width: 100%;
-        top: unset !important;
         left: 0 !important;
         right: 0;
-        bottom: 50px !important;
         margin: auto !important;
         h1 {
             font-size: 24px !important;
@@ -104,6 +123,35 @@
         min-width: 100%;
     }
 }
+
+
+/* 480px  */
+@media only screen and (max-width: 480px) {
+
+    section.homepage.homepage--main.image-background .top-header .right a {
+        padding: 10px 15px !important;
+    }
+    section.homepage.homepage--main.image-background .center-title h2 {
+        font-size: 40px !important;
+    }
+    section.homepage.homepage--main.image-background .center-title h2 span {
+        font-size: 30px !important;
+    }
+
+}
+
+/* 360px  */
+@media only screen and (max-width: 360px) {
+
+    section.homepage.homepage--main.image-background .top-header .left {
+        img {
+            max-width: 150px !important;
+        }
+    }
+
+}
+
+
 
 
 
