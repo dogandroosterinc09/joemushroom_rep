@@ -19,9 +19,11 @@
         // .featured-destinations__banner h2 {
         //     bottom: 42px;
         // }
-        section.homepage.homepage--main.image-background .center-title h2,
+        section.homepage.homepage--main.image-background .center-title h2 {
+            line-height: 1.2em !important;
+        }
         section.homepage.homepage--main.image-background .center-title h2 span {
-            line-height: 0 !important;
+            line-height: 0.5em !important;
         }
     }
 }
