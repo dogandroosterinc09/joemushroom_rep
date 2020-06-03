@@ -21938,7 +21938,7 @@ _::-webkit-:not(:root:root),
   }
 
   section.homepage.homepage--main.image-background .top-header .right {
-    margin: 15px auto !important;
+    margin: 25px auto !important;
     text-align: center;
     float: none !important;
   }
@@ -21946,7 +21946,7 @@ _::-webkit-:not(:root:root),
   section.homepage.homepage--main.image-background .top-header .right a {
     display: block !important;
     max-width: 400px !important;
-    margin: 5px auto !important;
+    margin: 8px auto !important;
   }
 
   section.homepage.homepage--main.image-background .center-title {
@@ -21956,6 +21956,10 @@ _::-webkit-:not(:root:root),
     right: 0;
     bottom: 50px !important;
     margin: auto !important;
+  }
+  section.homepage.homepage--main.image-background .center-title h1 {
+    font-size: 24px !important;
+    margin-bottom: 15px;
   }
   section.homepage.homepage--main.image-background .center-title h2 {
     font-size: 90px !important;
@@ -22420,8 +22424,8 @@ section.homepage.homepage--main.image-background .top-header .right a:hover span
 }
 section.homepage.homepage--main.image-background .center-title {
   position: absolute;
-  height: 300px;
-  top: 88px;
+  height: 280px;
+  top: 130px;
   left: 135px;
   bottom: 0;
   margin: auto 0;
@@ -22430,7 +22434,7 @@ section.homepage.homepage--main.image-background .center-title {
 }
 section.homepage.homepage--main.image-background .center-title h1 {
   position: relative;
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 900;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;

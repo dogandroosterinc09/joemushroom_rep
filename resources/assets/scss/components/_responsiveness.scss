@@ -52,14 +52,14 @@
         text-align: center;
     }
     section.homepage.homepage--main.image-background .top-header .right {
-        margin: 15px auto !important;
+        margin: 25px auto !important;
         text-align: center;
         float: none !important;
     }
     section.homepage.homepage--main.image-background .top-header .right a {
         display: block !important;
         max-width: 400px !important;
-        margin: 5px auto !important;
+        margin: 8px auto !important;
     }
     section.homepage.homepage--main.image-background .center-title {
         width: 100%;
@@ -68,6 +68,10 @@
         right: 0;
         bottom: 50px !important;
         margin: auto !important;
+        h1 {
+            font-size: 24px !important;
+            margin-bottom: 15px;
+        }
         h2 {
             font-size: 90px !important;
             span {
