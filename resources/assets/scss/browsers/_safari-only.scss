@@ -59,4 +59,13 @@ _::-webkit-:not(:root:root),
 }
 
 // for safari mac only
-.mac-chrome {}
+.mac-chrome {
+
+    section.homepage.homepage--main.image-background .center-title h2 {
+        line-height: 1.2em !important;
+    }
+    section.homepage.homepage--main.image-background .center-title h2 span {
+        line-height: 0 !important;
+    }
+    
+}
