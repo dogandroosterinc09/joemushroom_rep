@@ -1,5 +1,5 @@
 <section id="coming-soon" class="homepage homepage--main image-background">
-    <img src="{{ asset('public/images/coming-soon-banner-new.jpg') }}" alt="Banner Image">
+    <img src="{{ asset('public/images/coming-soon-banner-updated.jpg') }}" alt="Banner Image">
     <div class="top-header">
         <div class="left">
             <img src="{{ asset('public/images/header/header-logo.png') }}" alt="Logo">
