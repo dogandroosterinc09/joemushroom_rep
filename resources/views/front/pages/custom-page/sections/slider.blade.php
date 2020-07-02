@@ -1,9 +1,9 @@
 <section class="banner">
     <div class="banner__slick">
 
-        @foreach(\App\Models\HomeSlide::get() as $home_slide)
+        /*@foreach(\App\Models\HomeSlide::get() as $home_slide)
             <div class="banner__item image-background">
-                <img src="{{ url('public/images/banner.jpg') }}">
+                <img src="{{ asset('public/images/home/homepage-banner.jpg') }}">
                 <div class="banner__content container">
                     <div class="banner__content--row row">
                         <div class="col-lg-8">
@@ -19,7 +19,25 @@
                     </div>
                 </div>
             </div>
-        @endforeach
+        @endforeach*/
+
+        <div class="banner__item image-background">
+            <img src="{{ asset('public/images/home/homepage-banner.jpg') }}">
+            <div class="banner__content container">
+                <div class="banner__content--row row">
+                    <div class="col-lg-8">
+                        <div class="banner__content text-left">
+                            <div class="banner__content__text">
+                                
+                            </div>
+                            <div class="banner__content__cta padding--top1em">
+                                <a href="#" class="btn btn--secondary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <a href="#main" class="vertical btn--scroll-down">SCROLL</a>

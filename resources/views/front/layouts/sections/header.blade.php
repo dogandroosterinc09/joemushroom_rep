@@ -5,7 +5,7 @@
         <div class="main-nagivation-desktop__wrapper--row row">
             <div class="col-lg-2 main-nagivation-desktop__wrapper--logo">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('public/images/header/logo.jpg') }}" alt="GNF logo">
+                    <img src="{{ asset('public/images/header/main-header-logo.png') }}" alt="Header Logo">
                 </a>
             </div>
             <div class="col-lg-8 main-nagivation-desktop__wrapper--menu">
@@ -138,7 +138,7 @@
     {{-- FOR MOBILE MENU  --}}
     <nav class="mobile navbar navbar-expand-xl navbar-light" id="main_navbar">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('public/images/header/logo.jpg') }}" alt="GNF logo">
+            <img src="{{ asset('public/images/header/main-header-logo.png') }}" alt="GNF logo">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
