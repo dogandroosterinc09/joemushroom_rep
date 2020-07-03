@@ -2,12 +2,14 @@ $banner-background-color:#000;
 .banner {
     // height: 100vh !important;
     // margin-top: $header-height;
-    height: 100vh;
-    // overflow: hidden;
+    height: 154.6vh;
+    overflow: hidden;
     min-height: calc(100%);
     position: relative;
+    display: block;
     background-color: $banner-background-color;
     margin-bottom: 150px;
+    top: -18px;
     &__slick {
         display: block;
         height: 100%;

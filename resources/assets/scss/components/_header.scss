@@ -5,14 +5,14 @@ $header-background:transparent;
 header {
     // padding: 0;
     // position: relative;
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 9;
     padding: 0;
     top: 0;
     left: 0;
-    height: 120px;
-    background: transparent;
+    height: 128px;
+    background: $color-white;
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center;
@@ -32,6 +32,31 @@ header {
             background: #092c42;
         }
     }
+    .main-nagivation-desktop {
+        &__wrapper {
+            &--logo {
+                position: relative;
+                display: block;
+                text-align: center;
+                 a {
+                     position: relative;
+                     display: block;
+                     background-color: $color-white;
+                     border-radius: 100%;
+                     max-width: 256px;
+                     margin: 0 auto;
+                     img {
+                         width: 100%;
+                         max-width: 264px;
+                     }
+                 }
+            }
+        }
+    }
+    .mobile {
+        display: none;
+    }
+
     .navbar-brand {
         background-color: $color-white;
         box-shadow: 3.178px 6.237px 10px 0px rgba(0, 0, 0, 0.45);
@@ -171,7 +196,8 @@ header {
                             opacity: 1;
                         }
                         a {
-                            color: #393e41;
+                            color: #292929;
+                            
                         }
                         &:hover {
                             .dropdown-toggle {}
@@ -402,13 +428,15 @@ header {
                 }
                 a {
                     &.nav-link {
-                        color: $color-white;
-                        // font-size: 16px;
-                        // text-transform: uppercase;
-                        // font-weight: 600;
+                        color: #292929;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-family: $font-primary;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        padding: 52px 15px;
                         @media (max-width: 1400px) {
                             font-size: 14px;
                         }

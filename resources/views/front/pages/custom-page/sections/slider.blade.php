@@ -25,13 +25,14 @@
             <img src="{{ asset('public/images/home/homepage-banner.jpg') }}">
             <div class="banner__content container">
                 <div class="banner__content--row row">
-                    <div class="col-lg-8">
-                        <div class="banner__content text-left">
-                            <div class="banner__content__text">
-                                
+                    <div class="col-lg-12">
+                        <div class="banner__content text-center">
+                            <div class="banner__content__text ">
+                                <h1>Providing Organic Mushrooms 
+                                    to Support a Healthy Lifestyle</h1>
                             </div>
                             <div class="banner__content__cta padding--top1em">
-                                <a href="#" class="btn btn--secondary">Button</a>
+                                <a href="#" class="btn btn--secondary"></a>
                             </div>
                         </div>
                     </div>

@@ -3,136 +3,66 @@
     {{-- FOR DESKTOP MENU  --}}
     <div class="main-nagivation-desktop container">
         <div class="main-nagivation-desktop__wrapper--row row">
-            <div class="col-lg-2 main-nagivation-desktop__wrapper--logo">
-                <a href="{{ url('/') }}">
-                    <img src="{{ asset('public/images/header/main-header-logo.png') }}" alt="Header Logo">
-                </a>
-            </div>
-            <div class="col-lg-8 main-nagivation-desktop__wrapper--menu">
+            <div class="col-lg-4 main-nagivation-desktop__wrapper--menu">
                 <nav class="navbar-bar">
                     <ul class="navbar-bar__wrapper">
-                        {{-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-                        </li> --}}
-                        <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" {{--data-toggle="dropdown"--}}>
-                                Our Research
-                            </a>
-                            <div class="dropdown-menu mm-menu">
-                                <ul class="sub-menu mega-menu">
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>1</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>2</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>3</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
-                        <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" {{--data-toggle="dropdown"--}}>
-                                Products
-                            </a>
-                            <div class="dropdown-menu mm-menu">
-                                <ul class="sub-menu mega-menu">
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>1</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>2</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>3</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)">Products</a>
                         </li>
-                        <li class="nav-item dropdown mm-menu">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" {{--data-toggle="dropdown"--}}>
-                                About Us
-                            </a>
-                            <div class="dropdown-menu mm-menu">
-                                <ul class="sub-menu mega-menu">
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>1</span>
-                                        </a>
-                                    </li>
-                                    {{-- <li>
-                                        <a class="nav-link" href="{{ url('contact-us') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Contact Us</span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a class="nav-link" href="javascript:void(0)">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>2</span>
-                                        </a>
-                                    </li>
-                                    
-                                    {{-- <li>
-                                        <a class="nav-link" href="{{ url('gallery') }}">
-                                            <div class="img-holder"><img src="{{ asset('public/images/mm-img.jpg') }}" alt="Mega Menu Image"></div>
-                                            <span>Gallery</span>
-                                        </a>
-                                    </li> --}}
-                                    
-                                </ul>
-                            </div>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)">Contact Us</a>
                         </li>                        
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-2 main-nagivation-desktop__wrapper--menu-secondary text-right">
+            <div class="col-lg-4 main-nagivation-desktop__wrapper--logo">
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('public/images/header/main-header-logo.png') }}" alt="Header Logo">
+                </a>
+            </div>
+            <div class="col-lg-4 main-nagivation-desktop__wrapper--menu">
+                <nav class="navbar-bar">
+                    <ul class="navbar-bar__wrapper">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Products</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Products</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Contact Us</a>
+                        </li>                        
+                    </ul>
+                </nav>
+            </div>
+            {{--  <div class="col-lg-2 main-nagivation-desktop__wrapper--menu-secondary text-right">
                 <div class="nav-secondary">
                     <ul>
                         <li><a href="#" class="btn--search"><i class="fas fa-search"></i></a></li>
                         <li><a href="//www.novartis.com/" target="_blank"><i class="fas fa-phone text-white"></i></a></li>
                     </ul>
                 </div>
-            </div>
+            </div>  --}}
             <!-- ending of row  -->
         </div>
         <!-- ending of container  -->
     </div>
 
-    <div class="search-wrap">
+    {{--  <div class="search-wrap">
         <form  action="{{url('search')}}">
             <label for="search-input"></label>
             <input type="text" id="search-input" placeholder="Search..." name="keywords">
             <button type="submit" class="btn btn--primary">submit</button>
             <span class="close">X</span>
         </form>
-    </div>
+    </div>  --}}
 
 
     {{-- FOR MOBILE MENU  --}}
@@ -227,7 +157,7 @@
 </header>
 
 
-<section class="search-box">
+{{--  <section class="search-box">
     <div class="search-box__button"></div>
     <div class="search-box__wrapper container">
         <div class="row">
@@ -239,12 +169,12 @@
                         </a>
                         <input type="text" name="keyword" id="keyword" placeholder="Search Keyword">
 
-                        {{-- <input type="text" name="keyword" id="keyword" placeholder="Search Keyword"
+                        <input type="text" name="keyword" id="keyword" placeholder="Search Keyword"
                                    value="{{ !empty($search_params) && isset($search_params['keyword']) ? $search_params['keyword'] : '' }}"
-                        spellcheck="false"> --}}
+                        spellcheck="false">
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</section>
+</section>  --}}
