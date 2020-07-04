@@ -79,6 +79,17 @@ class AdminTemplateProvider extends ServiceProvider
                 ]);
             }
 
+            array_push($navigation, [
+                'name' => 'Facility Archive',
+                'url' => url('admin/facility'),
+                'icon' => 'fa fa-list'
+            ]);
+            array_push($navigation, [
+                'name' => 'Team Archive',
+                'url' => url('admin/team'),
+                'icon' => 'fa fa-list'
+            ]);
+
 
 
             if ($this->hasCrudAccessFor('User') || $this->hasCrudAccessFor('Permission') || $this->hasCrudAccessFor('Permission Group') || $this->hasCrudAccessFor('Role')) {
