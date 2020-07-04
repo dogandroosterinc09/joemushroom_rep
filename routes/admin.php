@@ -128,6 +128,54 @@ Route::delete('/contacts/{id}/delete',
 /* presses */
 
 
+/* Facility Archive */
+Route::get('/facility', [
+    'uses' => '\App\Http\Controllers\FacilityController@index',
+    'as' => 'admin.pages.facilities.index',
+]);
+
+Route::get('/facility_create', [
+    'uses' => '\App\Http\Controllers\FacilityController@facilityCreate',
+    'as' => 'admin.pages.facilities.create',
+]);
+
+Route::get('/facility_edit/{id}',
+    ['as' => 'admin.pages.facilities.edit',
+        'uses' => '\App\Http\Controllers\FacilityController@facilityEdit']
+);
+
+Route::post('/facility_store', '\App\Http\Controllers\FacilityController@storeFacility')->name('storeFacility');
+
+Route::post('/facility_update/{id}', '\App\Http\Controllers\FacilityController@updateFacility')->name('updateFacility');
+
+Route::post('/facility_delete', '\App\Http\Controllers\FacilityController@deleteFacility')->name('deleteFacility');
+
+
+
+/* Team Member */
+Route::get('/team', [
+    'uses' => '\App\Http\Controllers\TeamController@index',
+    'as' => 'admin.pages.team.index',
+]);
+
+Route::get('/team_create', [
+    'uses' => '\App\Http\Controllers\TeamController@teamCreate',
+    'as' => 'admin.pages.team.create',
+]);
+
+Route::get('/team_edit/{id}',
+    ['as' => 'admin.pages.team.edit',
+        'uses' => '\App\Http\Controllers\TeamController@teamEdit']
+);
+
+Route::post('/team_store', '\App\Http\Controllers\TeamController@storeTeam')->name('storeTeam');
+
+Route::post('/team_update/{id}', '\App\Http\Controllers\TeamController@updateTeam')->name('updateTeam');
+
+Route::post('/team_delete', '\App\Http\Controllers\TeamController@deleteTeam')->name('deleteTeam');
+
+
+
 /*Route::resource('/faqs', 'FAQController', [
     'as' => 'admin'
 ]);
