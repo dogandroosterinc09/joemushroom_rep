@@ -3,7 +3,7 @@
     @include('front.pages.custom-page.sections.slider')
     <main class="main-content">
         {{-- individual section  --}}
-        <section class="section-name">
+        <section class="hp-whatwemake">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 section-name__item">

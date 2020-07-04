@@ -18018,23 +18018,25 @@ header {
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: center;
+  transition: all 0.3s ease-in-out;
   /* Medium devices (tablets, 768px and up) 
   The navbar toggle appears at this breakpoint */
 }
 header.scrolling {
   position: fixed !important;
-  height: 60px;
+  height: 100px;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.6);
 }
-header.scrolling a.navbar-brand {
-  width: 150px;
+header.scrolling nav.navbar-bar ul li a {
+  padding: 38px 15px;
 }
-header.scrolling ul.navbar-nav.navbar-nav--bottom {
-  background: #092c42;
+header.scrolling .main-nagivation-desktop__wrapper--logo a img {
+  width: 100%;
+  max-width: 122px;
 }
 header .main-nagivation-desktop__wrapper--logo {
   position: relative;
@@ -18052,6 +18054,7 @@ header .main-nagivation-desktop__wrapper--logo a {
 header .main-nagivation-desktop__wrapper--logo a img {
   width: 100%;
   max-width: 264px;
+  transition: all 0.3s ease-in-out;
 }
 header .mobile {
   display: none;
@@ -18356,6 +18359,7 @@ header .navbar-bar ul li a.nav-link {
   justify-content: center;
   align-items: center;
   padding: 52px 15px;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1400px) {
   header .navbar-bar ul li a.nav-link {
@@ -18399,14 +18403,27 @@ header .dropdown .dropdown-menu {
 }
 
 .banner {
-  height: 154.6vh;
+  height: 93.2vh;
   overflow: hidden;
   min-height: calc(100%);
   position: relative;
   display: block;
   background-color: #000;
-  margin-bottom: 150px;
+  margin-bottom: 0;
   top: -18px;
+  /*&::before {
+      content: '';
+      background: url('../images/banner-shadow.png');
+      background-repeat: no-repeat;
+      background-size: initial;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: -34px;
+      left: 0;
+      background-position: bottom;
+      z-index: -1;
+  }*/
 }
 .banner__slick {
   display: block;
@@ -18494,12 +18511,43 @@ header .dropdown .dropdown-menu {
   flex-direction: column;
   justify-content: center;
 }
-.banner__content h1 {
-  font-size: 4em;
-  font-weight: 800;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+.banner__content__text {
+  position: absolute;
+  min-height: 430px;
+  top: 250px;
+}
+.banner__content__text a.play-btn i {
+  position: relative;
+  display: block;
+  background: url("../images/home/play-btn.png");
+  width: 62px;
+  height: 62px;
+  margin: 0 auto;
+}
+.banner__content__text .banner-links {
+  position: relative;
+  display: block;
   text-align: center;
+  margin-top: 20px;
+}
+.banner__content__text .banner-links a {
+  color: #ffffff;
+  font: bold 16px "Open Sans", sans-serif;
+  padding: 0 40px 15px;
+  margin: 0 10px;
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none;
+}
+.banner__content h1 {
+  font-size: 6vw;
+  font-weight: normal;
+  color: #ffffff;
+  font-family: "Katibeh", cursive;
+  text-align: center;
+}
+.banner__content h1 span {
+  font-size: 4.5vw;
+  display: block;
 }
 .banner__content p {
   font-family: "Open Sans", sans-serif;
@@ -18544,18 +18592,17 @@ header .dropdown .dropdown-menu {
   justify-content: center;
   width: 100%;
 }
-.banner:after {
+.banner::after {
   content: "";
-  background: url("../images/banner-shadow.png");
-  background-repeat: no-repeat;
-  background-size: initial;
-  position: absolute;
-  height: 100%;
+  display: block;
+  background: url("../images/home/banner-overlay.png");
   width: 100%;
-  bottom: -34px;
+  height: 172px;
+  position: absolute;
   left: 0;
-  background-position: bottom;
-  z-index: -1;
+  right: 0;
+  bottom: -25px;
+  z-index: 0;
 }
 
 .subpage-banner {
@@ -22424,6 +22471,14 @@ section.homepage .location__item--map {
   section.homepage .location__item--map {
     position: relative;
   }
+}
+
+.hp-whatwemake {
+  position: relative;
+  display: block;
+  margin-top: -18px;
+  min-height: 500px;
+  background: #f2f2ee;
 }
 
 .dashboard--support ul.helper {

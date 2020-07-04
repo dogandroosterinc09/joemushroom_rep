@@ -28,11 +28,17 @@
                     <div class="col-lg-12">
                         <div class="banner__content text-center">
                             <div class="banner__content__text ">
+                                <a href="" class="play-btn"><i></i></a>
                                 <h1>Providing Organic Mushrooms 
-                                    to Support a Healthy Lifestyle</h1>
+                                    <span>to Support a Healthy Lifestyle</span>
+                                </h1>
+                                <div class="banner-links">
+                                    <a href="#"><span>View All Products</span></a>
+                                    <a href="#"><span>Explore Our Facilities</span></a>
+                                </div>
                             </div>
                             <div class="banner__content__cta padding--top1em">
-                                <a href="#" class="btn btn--secondary"></a>
+                                {{--<a href="#" class="btn btn--secondary"></a>--}}
                             </div>
                         </div>
                     </div>

@@ -7,15 +7,15 @@
                 <nav class="navbar-bar">
                     <ul class="navbar-bar__wrapper">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        
-                        <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)">Products</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Contact Us</a>
+                            <a class="nav-link" href="javascript:void(0)">Our Facilities</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Mushroom 101</a>
                         </li>                        
                     </ul>
                 </nav>
@@ -29,15 +29,15 @@
                 <nav class="navbar-bar">
                     <ul class="navbar-bar__wrapper">
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Products</a>
+                            <a class="nav-link" href="javascript:void(0)">How We Grow</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Products</a>
+                            <a class="nav-link" href="javascript:void(0)">Our Story</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Contact Us</a>
+                            <a class="nav-link" href="javascript:void(0)">Contact</a>
                         </li>                        
                     </ul>
                 </nav>

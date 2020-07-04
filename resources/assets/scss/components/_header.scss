@@ -1,6 +1,6 @@
 // Control settings
 $header-height:147px;
-$header-scrolling-height:60px;
+$header-scrolling-height:100px;
 $header-background:transparent;
 header {
     // padding: 0;
@@ -16,6 +16,11 @@ header {
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &.scrolling {
         position: fixed !important;
         height: $header-scrolling-height;
@@ -25,12 +30,20 @@ header {
         z-index: 99;
         -webkit-box-shadow: 1px 0 5px 1px rgba(0, 0, 0, .6);
         box-shadow: 1px 0 5px 1px rgba(0, 0, 0, .6);
-        a.navbar-brand {
-            width: 150px;
+        nav.navbar-bar {
+            ul {
+                li {
+                    a {
+                        padding: 38px 15px;
+                    }
+                }
+            }
         }
-        ul.navbar-nav.navbar-nav--bottom {
-            background: #092c42;
+        .main-nagivation-desktop__wrapper--logo a img {
+            width: 100%;
+            max-width: 122px;
         }
+
     }
     .main-nagivation-desktop {
         &__wrapper {
@@ -48,6 +61,11 @@ header {
                      img {
                          width: 100%;
                          max-width: 264px;
+                         -webkit-transition: all 0.3s ease-in-out;
+                         -moz-transition: all 0.3s ease-in-out;
+                         -ms-transition: all 0.3s ease-in-out;
+                         -o-transition: all 0.3s ease-in-out;
+                         transition: all 0.3s ease-in-out;
                      }
                  }
             }
@@ -437,6 +455,11 @@ header {
                         justify-content: center;
                         align-items: center;
                         padding: 52px 15px;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
                         @media (max-width: 1400px) {
                             font-size: 14px;
                         }
