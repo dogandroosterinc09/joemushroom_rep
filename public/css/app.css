@@ -17785,10 +17785,8 @@ img.img-responsive {
   display: inline-block !important;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1400px;
-  }
+.container {
+  max-width: 1514px;
 }
 
 @media (max-width: 991px) {
