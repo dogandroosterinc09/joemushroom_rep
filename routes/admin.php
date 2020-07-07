@@ -176,6 +176,32 @@ Route::post('/team_delete', '\App\Http\Controllers\TeamController@deleteTeam')->
 
 
 
+/* FAQS Archive */
+Route::get('/faqs', [
+    'uses' => '\App\Http\Controllers\FaqsArchiveController@index',
+    'as' => 'admin.pages.faqs.index',
+]);
+
+Route::get('/faqs_create', [
+    'uses' => '\App\Http\Controllers\FaqsArchiveController@faqsCreate',
+    'as' => 'admin.pages.faqs.create',
+]);
+
+Route::get('/faqs_edit/{id}',
+    ['as' => 'admin.pages.faqs.edit',
+        'uses' => '\App\Http\Controllers\FaqsArchiveController@faqsEdit']
+);
+
+Route::post('/faqs_store', '\App\Http\Controllers\FaqsArchiveController@storeFaqs')->name('storeFaqs');
+
+Route::post('/faqs_update/{id}', '\App\Http\Controllers\FaqsArchiveController@updateFaqs')->name('updateFaqs');
+
+Route::post('/faqs_delete', '\App\Http\Controllers\FaqsArchiveController@deleteFaqs')->name('deleteFaqs');
+
+
+
+
+
 /*Route::resource('/faqs', 'FAQController', [
     'as' => 'admin'
 ]);

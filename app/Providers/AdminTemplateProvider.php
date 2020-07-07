@@ -90,6 +90,12 @@ class AdminTemplateProvider extends ServiceProvider
                 'icon' => 'fa fa-list'
             ]);
 
+            array_push($navigation, [
+                'name' => 'FAQS',
+                'url' => url('admin/faqs'),
+                'icon' => 'fa fa-list'
+            ]);
+
 
 
             if ($this->hasCrudAccessFor('User') || $this->hasCrudAccessFor('Permission') || $this->hasCrudAccessFor('Permission Group') || $this->hasCrudAccessFor('Role')) {
