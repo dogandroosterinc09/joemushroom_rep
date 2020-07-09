@@ -1,4 +1,4 @@
-<section class="page homepage--main-page">
+<section class="page homepage homepage--main-page">
     @include('front.layouts.sections.header')
     @include('front.pages.custom-page.sections.slider')
     <main class="main-content">
