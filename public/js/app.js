@@ -46891,7 +46891,7 @@ $(".morelink").click(function () {
 /***/ (function(module, exports) {
 
 $('.banner__slick').slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 800,
   slidesToShow: 1,

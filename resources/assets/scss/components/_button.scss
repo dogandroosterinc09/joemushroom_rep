@@ -43,6 +43,23 @@
                 color: $color-white;
             }
         }
+        &.orange {
+            color: #d18d53;
+            font-family: $font-primary;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 0 40px 15px;
+            margin: 0 10px;
+            border-bottom: 2px solid #d18d53;
+            text-decoration: none;
+            background: transparent;
+            &:hover {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
     }
     &--secondary {
         background: $color-third;
