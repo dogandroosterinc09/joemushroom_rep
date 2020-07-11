@@ -7,11 +7,11 @@
         <div class="right">
             <div class="desktop">
                 <a href="mailto:info@joemushroom.com"><span>Email: info@joemushroom.com</span></a>
-                <a href="tel:123.456.7890"><span>Call Us: (619) 991-0974</span></a>
+                <a href="tel:619 991 0974"><span>Call Us: (619) 991-0974</span></a>
             </div>
             <div class="mobile">
                 <a href="mailto:info@joemushroom.com"><i class="far fa-envelope"></i></a>
-                <a href="tel:123.456.7890"><i class="fas fa-phone"></i></a>
+                <a href="tel:619 991 0974"><i class="fas fa-phone"></i></a>
             </div>
 
         </div>
