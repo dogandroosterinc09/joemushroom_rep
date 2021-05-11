@@ -19,7 +19,7 @@
     "jquery": "2.2.4",
     "jquery-validation": "^1.15.1",
     "laravel-mix": "^4.0.7",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "magnific-popup": "^1.1.0",
     "popper.js": "^1.15.0",
     "readmore-js": "^2.2.1",
